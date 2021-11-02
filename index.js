@@ -19,7 +19,12 @@ Do the following:
 
    HINT: no function required
 */
-
+votingAge = 18;
+if(votingAge>=18){
+  console.log('task1a', 'true');
+}else{
+  console.log('task1a', 'false');
+};
 
 
 /*
@@ -33,6 +38,14 @@ Do the following:
    HINT: no function required
 */
 
+let Uno = 1
+let Dos =2
+if(Uno!==1 && Dos===2){
+  console.log('How did that happen??');
+}else{
+  Uno=11;
+}
+console.log('task 1b', Uno)
 
 
 
@@ -47,6 +60,9 @@ Do the following:
 
    HINT: look up the Number method
 */
+let string = '1999';
+Number(string);
+console.log('task 1c', Number(string))
 
 
 
@@ -60,9 +76,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-  /*add your code here*/
-}
+function multiply(a, b){
+  return a * b;
+};
+console.log('task 1d', multiply(10, 20))
 
 
 
@@ -76,9 +93,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(h, d){
+ 
+  /*human years depicted by "h" dog depicted by d*/
+  return h * d;
 }
+console.log('task 2', dogYears(5, 7))
 
 
 
