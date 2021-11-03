@@ -173,12 +173,39 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
-
+let userChoice = '';
+let comChoice = Math.floor(Math.random() * 3);
 function game(user, computer){
-  /*add your code here*/
-}
-
-
+ switch(comChoice){
+ case 0:
+   console.log('rock');
+  break;
+  case 1:
+    console.log('paper');
+    break;
+   case 2:
+     console.log('scissors');
+     break;
+ }
+     if(userChoice === comChoice){
+       return console.log('Draw!');
+     }else if(userChoice === 'rock' && comChoice === 1){
+       console.log('You Lose!');
+     }else if(userChoice ==='rock' && comChoice === 2){
+       console.log('You Win!');
+     }else if(userChoice === 'paper' && comChoice === 0){
+       console.log('You Win!');
+     }else if(userChoice === 'paper' && comChoice === 2){
+       console.log('You Lose!');
+     }else if(userChoice === 'scissors' && comChoice === 0){
+       console.log('You Win!');
+     }else if(userChoice === 'scissors' && comChoice === 1){
+       console.log('You Lose!');
+     };
+     
+};
+userChoice ='rock'
+console.log(game('task 4', userChoice, comChoice));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
